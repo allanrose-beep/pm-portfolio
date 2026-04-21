@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The $500K Feature — Allan Rose</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="nav-logo" href="../../index.html">Allan Rose</a>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="19" y2="6"/><line x1="3" y1="11" x2="19" y2="11"/><line x1="3" y1="16" x2="19" y2="16"/>
+      </svg>
+    </button>
+    <div class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="../../index.html" class="nav-link">Home</a></li>
+        <li><a href="../../about/index.html" class="nav-link">About</a></li>
+        <li><a href="../../index.html#work" class="nav-link active">Work</a></li>
+        <li><a href="../../index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="project-wrapper">
+    <a class="project-back" href="../../index.html#work">← Back to Work</a>
+
+    <section class="project-hero">
+      <div class="project-hero-text">
+        <p class="project-label">New Feature · Case Study</p>
+        <h1 class="project-title">The $500K Feature: simplifying account selection</h1>
+        <div class="project-meta">
+          <div class="meta-item"><span class="meta-label">Role</span><span class="meta-value">Product Manager</span></div>
+          <div class="meta-item"><span class="meta-label">Company</span><span class="meta-value">Crimson Interactive</span></div>
+          <div class="meta-item"><span class="meta-label">Brand</span><span class="meta-value">Enago</span></div>
+          <div class="meta-item meta-impact"><span class="meta-label">Impact</span><span class="meta-value">Won a $500,000 bid client</span></div>
+        </div>
+      </div>
+      <div class="project-hero-image">
+        <img src="../../asset/work/account-hero.jpg" alt="Account Selection" />
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>The problem we uncovered</h2>
+      <p>We had a long-standing contract with a major university, funded by a large government research budget. The agreement allowed each of their 800 researchers to submit up to 10 documents for free editing — 8,000 documents in total. But our system lacked real-time tracking, creating a critical blind spot.</p>
+      <p>Authors sometimes submitted 12 to 15 documents unknowingly. This wasn't just a billing issue — the client expected us to enforce submission limits. Meanwhile, competitors were already pitching them with solutions that solved this exact problem.</p>
+    </section>
+
+    <section class="project-section">
+      <h2>The real cost of no tracking</h2>
+      <p>Our submission process under the SPOC Approval Model was missing a crucial piece: real-time tracking. Researchers routinely exceeded limits, and three significant headaches followed:</p>
+      <ul>
+        <li><strong>Financial risk</strong> — clients being charged incorrectly</li>
+        <li><strong>Erosion of trust</strong> — risking long-term partnerships</li>
+        <li><strong>Wasted time</strong> — manual tracking slowed every handover</li>
+      </ul>
+    </section>
+
+    <section class="project-section">
+      <h2>Ideation</h2>
+      <p>Trying to track assignments once they were already in the system was a losing battle. The university's confirmation process was delayed, and with a growing backlog, the SPOC would sometimes confirm orders randomly without any running count.</p>
+      <p>Our "aha" moment: halt the process at the inquiry stage itself, right on the form. When an author entered their email, the system would recognise them and present a choice — submit via the university-funded account, or via their own personal account (which they'd pay for upfront).</p>
+      <img src="../../asset/work/accselectionideation.jpg" alt="Account Selection Ideation" class="project-section-img" />
+    </section>
+
+    <section class="project-section">
+      <h2>Solution</h2>
+      <p>We added a smart check directly on the NEIP inquiry form. When a researcher entered their email, the system instantly looked up their submission count and offered two options:</p>
+      <ul>
+        <li><strong>Group ID</strong> — the university-funded account, if submissions remained</li>
+        <li><strong>Individual account</strong> — personal account with upfront payment</li>
+      </ul>
+      <p>This gave us a clear competitive edge: not just a tracker, but a live inquiry restrictor sitting on the form itself. More control for us, clearer expectations for the user.</p>
+      <img src="../../asset/work/accselectionideation.jpg" alt="Account Selection Solution" class="project-section-img" />
+    </section>
+
+    <section class="project-section">
+      <h2>What we built</h2>
+      <ul>
+        <li><strong>Automated quota tracking</strong> — monitored each author's submission usage in real time</li>
+        <li><strong>Enforced limits</strong> — blocked Group ID submissions once the quota was hit</li>
+        <li><strong>Transparency</strong> — live count shown in the account-selection pop-up so users knew exactly where they stood</li>
+      </ul>
+    </section>
+
+    <section class="project-section">
+      <h2>The outcome</h2>
+      <p>We built a new database table to track limits and updated the inquiry form so the account-selection pop-up displayed a live count. Once the limit was hit, the Group ID option greyed out. The pilot launched with the university's clients and worked cleanly on day one — without touching the legacy submission form or altering the core SPOC Approval Model workflow.</p>
+      <img src="../../asset/work/accountselectionfinal.png" alt="Account Selection Outcome" class="project-section-img" />
+      <blockquote class="project-pullquote">
+        A $500,000 bid followed — the client's biggest concern had become the feature they kept pointing to in review calls.
+      </blockquote>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-quote">"The best time to start creating was yesterday. The second best time is now."</p>
+    <p class="footer-credit">© 2026 Allan Rose</p>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>
